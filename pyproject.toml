@@ -1,0 +1,25 @@
+[project]
+name = "widden-planrag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rahma", email = "rahmahassaan75@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-core>=1.7.1",
+    "langchain-groq>=1.1.3",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.67.0",
+    "tavily>=1.1.0",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+widden-planrag = "widden_planrag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
